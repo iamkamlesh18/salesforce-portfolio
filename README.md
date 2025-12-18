@@ -1,6 +1,6 @@
 # salesforce-portfolio
 
-[![CI](https://github.com/iamkamlesh18/salesforce-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/iamkamlesh18/salesforce-portfolio/actions)
+[![CI](https://github.com/iamkamlesh18/salesforce-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/iamkamlesh18/salesforce-portfolio/actions) [![Coverage](https://img.shields.io/codecov/c/github/iamkamlesh18/salesforce-portfolio/main.svg)](https://codecov.io/gh/iamkamlesh18/salesforce-portfolio)
 
 A small Salesforce portfolio project demonstrating a Lightning Web Component (LWC) and basic tests.
 
