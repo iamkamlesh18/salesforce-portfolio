@@ -1,0 +1,17 @@
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+
+.slds-nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
