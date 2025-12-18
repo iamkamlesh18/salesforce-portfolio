@@ -1,6 +1,6 @@
 # salesforce-portfolio
 
-[![CI](https://github.com/iamkamlesh18/salesforce-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/iamkamlesh18/salesforce-portfolio/actions) [![Coverage](https://img.shields.io/codecov/c/github/iamkamlesh18/salesforce-portfolio/main.svg)](https://codecov.io/gh/iamkamlesh18/salesforce-portfolio)
+[![CI](https://github.com/iamkamlesh18/salesforce-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/iamkamlesh18/salesforce-portfolio/actions) [![Coverage](https://img.shields.io/codecov/c/github/iamkamlesh18/salesforce-portfolio/main.svg)](https://codecov.io/gh/iamkamlesh18/salesforce-portfolio) [![Support](https://img.shields.io/badge/Support-Help-blue)](SUPPORT.md)
 
 | Quickstart | Development | Contributing | Code of Conduct |
 |---|---:|:---:|:---:|
