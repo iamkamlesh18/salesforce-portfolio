@@ -66,10 +66,13 @@ Follow these steps to get the repository ready locally and avoid common environm
    ```
 
 5. Preview the UI (static quick preview)
-   - A static preview of the `portfolioNav` component is available in `preview/`:
+   - **Recommended (best for quick iterative development):** run the preview server in the background so it stays available while you work:
      ```bash
-     npm run preview          # serves http://localhost:8000
-     # or
+     npm run preview --silent &    # serves http://localhost:8000 in background
+     ```
+     - `--silent` reduces server output; the trailing `&` runs it in the background. Use `pkill -f "serve preview"` to stop it, or run in foreground with `npm run preview`.
+   - Alternative (simple python server):
+     ```bash
      python3 -m http.server 8000 --directory preview
      ```
 
