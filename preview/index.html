@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio Nav Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="slds-navbar slds-navbar_inverse nav-fixed" role="navigation" aria-label="Primary navigation">
+    <div class="slds-navbar__brand">
+      <span class="brand-text">Curriculum Vitae</span>
+      <button id="menu-toggle" class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+    </div>
+
+    <ul id="primary-navigation" class="slds-navbar__nav slds-grid nav-list" data-id="nav-list" role="menubar" tabindex="0" aria-hidden="true">
+      <li class="slds-nav-item"><a href="#home" class="slds-nav-link" role="menuitem">Home</a></li>
+      <li class="slds-nav-item"><a href="#about" class="slds-nav-link" role="menuitem">About</a></li>
+      <li class="slds-nav-item"><a href="#resume" class="slds-nav-link" role="menuitem">Resume</a></li>
+      <li class="slds-nav-item"><a href="#projects" class="slds-nav-link" role="menuitem">Projects</a></li>
+      <li class="slds-nav-item"><a href="#contact" class="slds-nav-link" role="menuitem">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main style="padding:5rem 1rem;">
+    <h1>Preview Page</h1>
+    <p>Click the hamburger on small screens to toggle the nav. Resize your browser to test responsiveness.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

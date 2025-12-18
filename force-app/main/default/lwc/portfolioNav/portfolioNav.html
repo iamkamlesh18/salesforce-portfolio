@@ -1,24 +1,38 @@
 <template>
-  <nav class="slds-navbar slds-navbar_inverse nav-fixed">
+  <nav class="slds-navbar slds-navbar_inverse nav-fixed" role="navigation" aria-label="Primary navigation">
     <div class="slds-navbar__brand">
       <span class="brand-text">Curriculum Vitae</span>
+      <!-- Mobile menu toggle -->
+      <button
+        class="menu-toggle slds-button slds-button_icon slds-hidden_medium"
+        title="Toggle navigation"
+        aria-controls="primary-navigation"
+        aria-expanded={isMenuOpen}
+        data-id="menu-toggle"
+        onclick={toggleMenu}
+      >
+        <svg class="slds-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" />
+        </svg>
+        <span class="slds-assistive-text">Toggle navigation</span>
+      </button>
     </div>
 
-    <ul class="slds-navbar__nav slds-grid">
-      <li class="slds-nav-item">
-        <a href="#home" class="slds-nav-link">Home</a>
+    <ul id="primary-navigation" class={menuClass} data-id="nav-list" role="menubar" tabindex="0" aria-hidden={isMenuHidden}>
+      <li class="slds-nav-item" role="none">
+        <a href="#home" class="slds-nav-link" role="menuitem" data-index="0" onclick={onLinkClick} onkeydown={onLinkKeydown}>Home</a>
       </li>
-      <li class="slds-nav-item">
-        <a href="#about" class="slds-nav-link">About</a>
+      <li class="slds-nav-item" role="none">
+        <a href="#about" class="slds-nav-link" role="menuitem" data-index="1" onclick={onLinkClick} onkeydown={onLinkKeydown}>About</a>
       </li>
-      <li class="slds-nav-item">
-        <a href="#resume" class="slds-nav-link">Resume</a>
+      <li class="slds-nav-item" role="none">
+        <a href="#resume" class="slds-nav-link" role="menuitem" data-index="2" onclick={onLinkClick} onkeydown={onLinkKeydown}>Resume</a>
       </li>
-      <li class="slds-nav-item">
-        <a href="#projects" class="slds-nav-link">Projects</a>
+      <li class="slds-nav-item" role="none">
+        <a href="#projects" class="slds-nav-link" role="menuitem" data-index="3" onclick={onLinkClick} onkeydown={onLinkKeydown}>Projects</a>
       </li>
-      <li class="slds-nav-item">
-        <a href="#contact" class="slds-nav-link">Contact</a>
+      <li class="slds-nav-item" role="none">
+        <a href="#contact" class="slds-nav-link" role="menuitem" data-index="4" onclick={onLinkClick} onkeydown={onLinkKeydown}>Contact</a>
       </li>
     </ul>
   </nav>

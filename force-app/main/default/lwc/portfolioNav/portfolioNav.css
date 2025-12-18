@@ -3,6 +3,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .brand-text {
@@ -14,4 +16,67 @@
 .slds-nav-link {
   font-size: 1rem;
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.slds-nav-link.is-active {
+  background: rgba(0, 116, 255, 0.08);
+  color: #0074ff;
+}
+
+.menu-toggle {
+  margin-left: 0.75rem;
+}
+
+/* Hide mobile button on medium+ screens provided by SLDS naming -> show on small */
+.slds-hidden_medium {
+  display: inline-flex;
+}
+
+/* Responsive nav list */
+.nav-list {
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .nav-list {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3.5rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex-direction: column;
+
+    /* collapse by default */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 240ms ease, opacity 200ms ease;
+  }
+
+  .nav-list.is-open {
+    max-height: 600px; /* large enough to show all items */
+    opacity: 1;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .nav-list {
+      transition: none;
+    }
+  }
+}
+
+/* Focus styles for accessibility */
+.slds-nav-link:focus {
+  outline: 2px solid rgba(0,116,255,0.4);
+  outline-offset: 2px;
 }
