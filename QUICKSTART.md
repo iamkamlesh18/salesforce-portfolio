@@ -61,6 +61,4 @@ Follow these steps to get the repository ready locally and avoid common environm
 
 ---
 
-**Moved:** This file has been moved to the repository root as `QUICKSTART.md`. Please update any bookmarks or links to use `QUICKSTART.md` at the project root.
-
-If you previously relied on `docs/QUICKSTART.md`, update references to `QUICKSTART.md`.
+If you'd like I can add a short `DEVELOPMENT.md` with troubleshooting logs and additional setup notes.

@@ -31,7 +31,7 @@ MIT
 
 ## Quickstart & Developer Setup ⚙️
 
-See `docs/QUICKSTART.md` for a step-by-step Quickstart, environment setup, preview instructions, and common troubleshooting commands.
+See `QUICKSTART.md` for a step-by-step Quickstart, environment setup, preview instructions, and common troubleshooting commands.
 
 ---
 
