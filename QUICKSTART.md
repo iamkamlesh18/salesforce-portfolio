@@ -1,5 +1,29 @@
 # Quickstart & Developer Setup ⚙️
 
+A short, quick way to get the repo running locally. For full details expand the **Full quickstart** section.
+
+**Quick steps**:
+- Use Node LTS (v18) via `nvm`:
+  ```bash
+  nvm install 18 && nvm alias default 18
+  ```
+- Install dependencies:
+  ```bash
+  npm ci
+  ```
+- Run checks and tests:
+  ```bash
+  npm run lint && npm test
+  ```
+- Quick preview:
+  ```bash
+  npm run preview --silent &
+  # open http://localhost:8000
+  ```
+
+<details>
+<summary>Full quickstart & troubleshooting (expand)</summary>
+
 Follow these steps to get the repository ready locally and avoid common environment issues.
 
 1. Install Node & nvm (recommended)
@@ -59,6 +83,6 @@ Follow these steps to get the repository ready locally and avoid common environm
        - Python 3 is available for node-gyp.
      - If you see errors like `Found punctuation symbol or operator '%' that isn't valid in Apex` in the editor, reload VS Code or restart the Apex language server — this is typically a stale diagnostic.
 
----
+</details>
 
-If you'd like I can add a short `DEVELOPMENT.md` with troubleshooting logs and additional setup notes.
+If you want additional notes added here (short troubleshooting logs, CI IDs), say so and I will add them.

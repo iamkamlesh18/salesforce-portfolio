@@ -1,5 +1,30 @@
 # DEVELOPMENT.md — Troubleshooting & Developer Notes 🧾
 
+Short reference for developers: common fixes and the exact commands we used while onboarding. Expand **Full development notes** for details.
+
+**Key commands (quick reference)**
+
+- Set Node and install deps:
+  ```bash
+  nvm install 18 && nvm alias default 18
+  npm ci
+  ```
+- Install macOS build tools (if needed):
+  ```bash
+  xcode-select --install
+  ```
+- Run tests & coverage:
+  ```bash
+  npm run test:unit:coverage
+  ```
+- Preview:
+  ```bash
+  npm run preview --silent &
+  ```
+
+<details>
+<summary>Full development notes & troubleshooting (expand)</summary>
+
 This file contains notes, logs, and exact commands we used while onboarding this repository. Use it if you hit environment or CI issues.
 
 ## Environment & Common Fixes
@@ -83,7 +108,6 @@ ls -la coverage
 - Consider adding `CODECOV_TOKEN` as a repository secret if you want authenticated uploads to Codecov.
 - Add a small `preview:open` script in the future to open the browser automatically.
 
+</details>
 
----
-
-If you'd like, I can expand this with raw log excerpts from CI runs and the exact failing step outputs we observed. Let me know which logs you'd like included (Action run ids or workflow run timestamps).
+If you'd like raw CI logs or specific run IDs embedded here, tell me which run ids (I can add them or anonymize them).
