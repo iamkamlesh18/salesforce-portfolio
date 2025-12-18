@@ -2,6 +2,10 @@
 
 [![CI](https://github.com/iamkamlesh18/salesforce-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/iamkamlesh18/salesforce-portfolio/actions) [![Coverage](https://img.shields.io/codecov/c/github/iamkamlesh18/salesforce-portfolio/main.svg)](https://codecov.io/gh/iamkamlesh18/salesforce-portfolio)
 
+| Quickstart | Development | Contributing | Code of Conduct |
+|---|---:|:---:|:---:|
+| [Quickstart ⚡](QUICKSTART.md) | [Development 🧾](DEVELOPMENT.md) | [Contributing 🤝](CONTRIBUTING.md) | [Code of Conduct 🧑‍🤝‍🧑](CODE_OF_CONDUCT.md) |
+
 A small Salesforce portfolio project demonstrating a Lightning Web Component (LWC) and basic tests.
 
 ## Project structure
@@ -21,7 +25,7 @@ A small Salesforce portfolio project demonstrating a Lightning Web Component (LW
 
 ## CI
 
-This repo includes a GitHub Actions workflow to run lint and unit tests on push and pull requests.
+This repo includes a GitHub Actions workflow to run lint and unit tests on push and pull requests. The workflow runs on GitHub Actions when you push or open a PR — you don't need to execute the Actions YAML locally. To avoid triggering the workflow for a commit, include `[skip ci]` or `[ci skip]` in your commit message.
 
 ## License
 
