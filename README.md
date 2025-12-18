@@ -5,6 +5,7 @@
 | Quickstart | Development | Contributing | Code of Conduct |
 |---|---:|:---:|:---:|
 | [Quickstart ⚡](QUICKSTART.md) | [Development 🧾](DEVELOPMENT.md) | [Contributing 🤝](CONTRIBUTING.md) | [Code of Conduct 🧑‍🤝‍🧑](CODE_OF_CONDUCT.md) |
+| Get the repo running locally in <5 minutes. | Troubleshooting & helpful commands. | How to contribute & commit. | Expected community behavior and reporting. |
 
 A small Salesforce portfolio project demonstrating a Lightning Web Component (LWC) and basic tests.
 
