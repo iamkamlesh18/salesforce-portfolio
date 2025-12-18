@@ -21,6 +21,8 @@ A short, quick way to get the repo running locally. For full details expand the 
   # open http://localhost:8000
   ```
 
+**Troubleshooting:** For troubleshooting and advanced fixes (CI logs, plugin install issues), see `DEVELOPMENT.md`.
+
 <details>
 <summary>Full quickstart & troubleshooting (expand)</summary>
 

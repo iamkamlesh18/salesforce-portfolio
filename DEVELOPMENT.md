@@ -1,26 +1,8 @@
 # DEVELOPMENT.md — Troubleshooting & Developer Notes 🧾
 
-Short reference for developers: common fixes and the exact commands we used while onboarding. Expand **Full development notes** for details.
+This file contains in-depth troubleshooting, CI debugging notes, and advanced fixes.
 
-**Key commands (quick reference)**
-
-- Set Node and install deps:
-  ```bash
-  nvm install 18 && nvm alias default 18
-  npm ci
-  ```
-- Install macOS build tools (if needed):
-  ```bash
-  xcode-select --install
-  ```
-- Run tests & coverage:
-  ```bash
-  npm run test:unit:coverage
-  ```
-- Preview:
-  ```bash
-  npm run preview --silent &
-  ```
+**Note:** For quick setup and common commands (install, tests, preview) see `QUICKSTART.md` — keep `QUICKSTART.md` as the canonical quick reference.
 
 <details>
 <summary>Full development notes & troubleshooting (expand)</summary>
