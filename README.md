@@ -29,12 +29,6 @@ MIT
 
 ---
 
-## Quickstart & Developer Setup ⚙️
-
-See `QUICKSTART.md` for a step-by-step Quickstart, environment setup, preview instructions, and common troubleshooting commands.
-
----
-
 ## Useful Git / GitHub commands & notes 🔧
 
 - Initialize and push repository:
