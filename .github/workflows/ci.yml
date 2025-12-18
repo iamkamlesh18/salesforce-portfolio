@@ -20,8 +20,24 @@ jobs:
           node-version: "18"
           cache: "npm"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (with retries)
+        run: |
+          echo "Node: $(node -v)" && echo "npm: $(npm -v)"
+          set -e
+          for i in 1 2 3; do
+            echo "Attempt $i: npm ci"
+            if npm ci --silent; then
+              echo "npm ci succeeded"
+              break
+            else
+              echo "npm ci failed on attempt $i"
+              if [ "$i" -eq 3 ]; then
+                echo "All attempts failed"
+                exit 1
+              fi
+              sleep $((i * 3))
+            fi
+          done
 
       - name: Run Prettier (verify)
         run: npm run prettier -- --check
